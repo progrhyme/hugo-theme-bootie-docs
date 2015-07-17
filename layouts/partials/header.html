@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-{{ $baseUrl := .Site.BaseURL }}
 {{ $isHomePage := eq .Title .Site.Title }}
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
-		<link rel="icon" href="{{ $baseUrl }}/favicon.ico">
+		<link rel="alternate" href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
+		<link rel="icon" href="{{ .Site.BaseURL }}favicon.ico">
 		<title>{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 		<!--<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">-->
-		<link rel="stylesheet" href="{{ $baseUrl }}/css/highlight.js.min.css">
-		<link rel="stylesheet" href="{{ $baseUrl }}/css/bootstrap.min.css">
-		<link rel="stylesheet" href="{{ $baseUrl }}/css/bootstrap-theme.css">
-		<link rel="stylesheet" href="{{ $baseUrl }}/css/theme.css">
-		<link rel="stylesheet" href="{{ $baseUrl }}/css/bootie-docs.css">
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.js.min.css">
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css">
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap-theme.css">
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/theme.css">
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootie-docs.css">
 	</head>
 
 <body role="document">
@@ -28,16 +27,16 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="{{ $baseUrl }}/">{{ .Site.Title }}</a>
+				<a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li {{ if eq $isHomePage true }}class="active"{{ end }}><a href="{{ $baseUrl }}/">Home</a></li>
+					<li {{ if eq $isHomePage true }}class="active"{{ end }}><a href="{{ .Site.BaseURL }}">Home</a></li>
 			{{ if isset .Site.Params "mainMenu" }}
 				{{ $url := .Permalink }}
 				{{ range $item := .Site.Params.mainMenu }}
-					{{ $itemUrl := printf "%s/%s/" $baseUrl $item }}
-					<li {{ if eq $url $itemUrl }}class="active"{{ end }}><a href="{{ $baseUrl }}/{{ $item }}">{{ title $item }}</a></li>
+					{{ $itemUrl := printf "%s/%s/" .Site.BaseURL $item }}
+					<li {{ if eq $url $itemUrl }}class="active"{{ end }}><a href="{{ .Site.BaseURL }}{{ $item }}">{{ title $item }}</a></li>
 				{{ end }}
 			{{ end }}
 				{{ if isset .Site.Params "noCategoryLink" }}{{ else }}
@@ -45,7 +44,7 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Categories<span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 						{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-							<li><a href="{{ $baseUrl }}/categories/{{ $name | urlize }}">{{ title $name }}</a></li>
+							<li><a href="{{ .Site.BaseURL }}categories/{{ $name | urlize }}">{{ title $name }}</a></li>
 						{{ end }}
 						</ul>
 					</li>
