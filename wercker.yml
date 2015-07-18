@@ -1,0 +1,6 @@
+box: debian
+build:
+  steps:
+    - samueldebruyn/hugo-theme-check:
+        version: "0.14"
+        theme: material-lite
