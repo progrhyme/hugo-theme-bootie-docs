@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{{ $isHomePage := eq (relURL .URL) ("/" | safeHTML) }}
+{{ $isHomepage := (eq .Permalink (print .Site.BaseURL | safeHTML)) }}
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
