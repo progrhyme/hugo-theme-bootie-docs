@@ -1,4 +1,3 @@
-{{ $baseUrl := .Site.BaseURL }}
 {{ partial "header.html" . }}
 
 <main role="main">
@@ -22,7 +21,7 @@
 <hr />
 
 <div class="row doc-main text-center">
-	<a href="{{ $baseUrl }}/post">See posts for {{ .Site.Title }}</a>
+	<a href="{{ .Site.BaseURL }}post">See posts for {{ .Site.Title }}</a>
 </div>
 {{ end }}
 
