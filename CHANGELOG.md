@@ -1,3 +1,14 @@
+## 0.9.2 (2016/5/5)
+
+Feature:
+
+- Add new template for section `index/` page which shows all page list in the
+  site
+
+Change:
+
+- Simplify page list style using `<ul>` tag
+
 ## 0.9.1 (2016/5/4)
 
 Fix:
