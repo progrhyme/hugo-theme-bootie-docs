@@ -49,6 +49,9 @@ h2, .h2 {
 
 /* List items */
 .doc-list-header {
+  padding-bottom: 0px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
 }
 .doc-entry {
   color: #666;
@@ -60,6 +63,9 @@ h2, .h2 {
   font-style: italic;
   text-align: right;
   color: #999;
+}
+.doc-entry-meta.in-list {
+  font-size: 80%;
 }
 
 /* Sidebar modules for boxing content */
