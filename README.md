@@ -30,6 +30,7 @@ You can customize the menu items in the header navigation bar by configuring `pa
 # example of config.toml
 [params]
   mainMenu = ["about", "usage"]
+  highlightStyle = "github"
 ```
 
 All other options and usages are described at the documentation site -- http://key-amb.github.io/bootie-docs-demo/ .
@@ -42,9 +43,9 @@ Because _Bootie Docs_ is developed for documentation, it lacks many blog-type fa
 
 **Bootie Docs** includes following libraries:
 
-* [highlight.js](https://highlightjs.org/) v8.5 ... For syntax highlighting.
 * [Bootstrap](http://getbootstrap.com/) v3.3.6 ... Well-known CSS framework.
 * [jQuery](https://jquery.com/) v1.12.3 ... Requried by _Bootstrap_.
+* [highlight.js](https://highlightjs.org/) v9.3.0 ... For syntax highlighting.
 
 ## LICENSE
 

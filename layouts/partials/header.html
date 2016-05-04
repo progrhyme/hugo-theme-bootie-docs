@@ -9,7 +9,7 @@
 		<link rel="icon" href="{{ $baseUrl }}/favicon.ico">
 		<title>{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 		<!--<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">-->
-		<link rel="stylesheet" href="{{ $baseUrl }}/css/highlight.js.min.css">
+		<link rel="stylesheet" href="{{ $baseUrl }}/css/highlight/{{ if isset .Site.Params "highlightStyle" }}{{ .Site.Params.highlightStyle }}{{ else }}default{{ end }}.css">
 		<link rel="stylesheet" href="{{ $baseUrl }}/css/bootstrap.min.css">
 		<link rel="stylesheet" href="{{ $baseUrl }}/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="{{ $baseUrl }}/css/theme.css">
