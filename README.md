@@ -42,9 +42,9 @@ Because _Bootie Docs_ is developed for documentation, it lacks many blog-type fa
 
 **Bootie Docs** includes following libraries:
 
-* [Bootstrap](http://getbootstrap.com/) v3.3.4 ... Well-known CSS framework.
 * [jQuery](https://jquery.com/) v1.11.2 ... Requried by _Bootstrap_.
 * [highlight.js](https://highlightjs.org/) v8.5 ... For syntax highlighting.
+* [Bootstrap](http://getbootstrap.com/) v3.3.6 ... Well-known CSS framework.
 
 ## LICENSE
 
