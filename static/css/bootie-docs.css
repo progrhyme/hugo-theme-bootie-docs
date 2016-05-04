@@ -68,6 +68,14 @@ h2, .h2 {
   font-size: 80%;
 }
 
+/*
+ * Sidebar
+ */
+
+div#sidebar {
+  position: fixed;
+}
+
 /* Sidebar modules for boxing content */
 .sidebar-module {
   padding: 15px;
