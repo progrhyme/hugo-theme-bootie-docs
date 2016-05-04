@@ -1,3 +1,9 @@
+## 1.0.0 (2016/5/5)
+
+Improve:
+
+- Fix sidebar position for single page
+
 ## 0.9.2 (2016/5/5)
 
 Feature:
