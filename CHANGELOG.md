@@ -1,3 +1,21 @@
+## 0.9.1 (2016/5/4)
+
+Fix:
+
+- Use `.Site.BaseURL` instead of obsolete `.Site.BaseUrl`
+
+Change:
+
+- Renew favicon design
+- Update dependent components:
+  - bootstrap.css to v3.3.6 (was v3.3.4)
+  - jQuery to v1.12.3 (was v1.11.2)
+  - highlight.js to v9.3.0 (was v8.5)
+
+Enhance:
+
+- Add `Params.highlightStyle` config option to change code-highlight style
+
 ## 0.9 (2015/4/30)
 
 Initial release.
