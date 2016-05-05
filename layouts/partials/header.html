@@ -51,6 +51,17 @@
 					</li>
 				{{ end }}
 				</ul>
+				{{ if .Site.Params.searchDomain }}
+				<form class="navbar-form navbar-left" role="search" action="https://www.google.co.jp/search" method="get">
+					<div class="input-group doc-search-form">
+						<input type="hidden" name="as_sitesearch" value="{{ .Site.Params.searchDomain }}">
+						<input type="text" name="as_q" class="search-query doc-search-input-text" placeholder="Search Site">
+						<span class="input-group-addon input-group-btn doc-search-input-btn">
+							<button class="btn" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+						</span>
+					</div>
+				</form>
+				{{ end }}
 			</div><!--/.nav-collapse -->
 		</div>
 	</nav>
