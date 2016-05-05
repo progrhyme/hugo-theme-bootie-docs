@@ -1,3 +1,9 @@
+## 1.0.1 (2016/5/5)
+
+Feature:
+
+- Add optional search form powered by Google's site search
+
 ## 1.0.0 (2016/5/5)
 
 Improve:
