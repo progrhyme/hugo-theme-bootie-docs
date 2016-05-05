@@ -1,3 +1,13 @@
+## 1.0.2 (2016/5/5)
+
+Improve:
+
+- Apply default styles for tables in main content
+- Don't break lines in code blocks
+- Support wider view
+
+And minor style change.
+
 ## 1.0.1 (2016/5/5)
 
 Feature:
