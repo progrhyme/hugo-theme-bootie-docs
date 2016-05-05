@@ -131,6 +131,60 @@ div.doc-search-form {
   font-size: 80%;
 }
 
+/* Tables */
+main > article > section > table {
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+main > article > section > table > thead > tr > th,
+main > article > section > table > tbody > tr > th,
+main > article > section > table > tfoot > tr > th,
+main > article > section > table > thead > tr > td,
+main > article > section > table > tbody > tr > td,
+main > article > section > table > tfoot > tr > td {
+  padding: 8px;
+  font-size: 16px;
+  line-height: 1.4;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+main > article > section > table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+
+main > article > section > table > caption + thead > tr:first-child > th,
+main > article > section > table > colgroup + thead > tr:first-child > th,
+main > article > section > table > thead:first-child > tr:first-child > th,
+main > article > section > table > caption + thead > tr:first-child > td,
+main > article > section > table > colgroup + thead > tr:first-child > td,
+main > article > section > table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+main > article > section > table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+
+main > article > section > table > thead > tr > th,
+main > article > section > table > tbody > tr > th,
+main > article > section > table > tfoot > tr > th,
+main > article > section > table > thead > tr > td,
+main > article > section > table > tbody > tr > td,
+main > article > section > table > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+main > article > section > table > thead > tr > th,
+main > article > section > table > thead > tr > td {
+  border-bottom-width: 2px;
+}
+main > article > section > table > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
 /*
  * Sidebar
  */
