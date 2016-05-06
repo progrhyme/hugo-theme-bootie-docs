@@ -190,7 +190,6 @@ main > article > section > table > tbody > tr:nth-of-type(odd) {
  */
 
 div#sidebar {
-  position: fixed;
 }
 
 /* Sidebar modules for boxing content */

@@ -6,9 +6,12 @@ window.onload = function() {
   var totalHeight   = headHeight + mainHeight + footHeight;
   var w = $(window);
 
-  if (sideHeight > 0 && sideHeight < mainHeight) {
+  if (   w.width() > $("main").width() + $("#sidebar").width()
+      && sideHeight > 0
+      && sideHeight < mainHeight ) {
     $(".doc-sidebar").css("height", mainHeight);
     var sideNode = $("#sidebar");
+    sideNode.css({"position": "fixed"});
     var scrollStart = 0;
     var scrollStop  = headHeight + mainHeight - sideHeight;
 
@@ -16,7 +19,7 @@ window.onload = function() {
       if (w.scrollTop() <= scrollStart) {
         sideNode.css({"position": "fixed"});
       } else if (scrollStart < w.scrollTop() && w.scrollTop() < scrollStop) {
-        sideNode.css({"position": "fixed", "top": headHeight + "px"});
+        sideNode.css({"position": "fixed", "top": headHeight + 20 + "px"});
       } else if (w.scrollTop() >= scrollStop) {
         var topNext
           = headHeight - (headHeight + sideHeight)
@@ -26,5 +29,12 @@ window.onload = function() {
         });
       }
     });
-  } 
+  }
+}
+
+function resetSidebarPos() {
+  var sideNode = $("#sidebar");
+  if ( $(window).width() > $("main").width() + $("#sidebar").width() ) {
+    sideNode.css({"position": "fixed", "top": "", "bottom": ""});
+  }
 }
