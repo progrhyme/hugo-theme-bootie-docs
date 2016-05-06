@@ -29,8 +29,15 @@ You can customize the menu items in the header navigation bar by configuring `pa
 ```
 # example of config.toml
 [params]
-  mainMenu = ["about", "usage"]
   highlightStyle = "github"
+
+[[params.mainMenu]]
+  name = "Usage"
+  link = "usage"
+
+[[params.mainMenu]]
+  name = "News"
+  link = "categories/news"
 ```
 
 All other options and usages are described at the documentation site -- http://key-amb.github.io/bootie-docs-demo/ .
