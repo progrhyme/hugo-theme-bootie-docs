@@ -35,9 +35,9 @@
 					<li {{ if eq $isHomePage true }}class="active"{{ end }}><a href="{{ $baseUrl }}/">Home</a></li>
 			{{ if isset .Site.Params "mainMenu" }}
 				{{ $url := .Permalink }}
-				{{ range $item := .Site.Params.mainMenu }}
-					{{ $itemUrl := printf "%s/%s/" $baseUrl $item }}
-					<li {{ if eq $url $itemUrl }}class="active"{{ end }}><a href="{{ $baseUrl }}/{{ $item }}">{{ title $item }}</a></li>
+				{{ range $menu := .Site.Params.mainMenu }}
+					{{ $itemUrl := printf "%s/%s/" $baseUrl $menu.link }}
+					<li {{ if eq $url $itemUrl }}class="active"{{ end }}><a href="{{ $baseUrl }}/{{ $menu.link }}">{{ $menu.name }}</a></li>
 				{{ end }}
 			{{ end }}
 				{{ if isset .Site.Params "noCategoryLink" }}{{ else }}
