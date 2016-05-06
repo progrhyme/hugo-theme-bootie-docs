@@ -1,3 +1,12 @@
+## 1.0.3 (2016/5/6)
+
+Bug Fix:
+
+- Issues caused by fixed sidebar introduced in v1.0.0:
+  - It corrupted looks in narrow browsers (#12)
+  - "Back to Top" link at bottom of page did not restore original position of
+    sidebar (#11)
+
 ## 1.0.2 (2016/5/5)
 
 Improve:
