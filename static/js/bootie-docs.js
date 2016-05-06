@@ -6,9 +6,12 @@ window.onload = function() {
   var totalHeight   = headHeight + mainHeight + footHeight;
   var w = $(window);
 
-  if (sideHeight > 0 && sideHeight < mainHeight) {
+  if (   w.width() > $("main").width() + $("#sidebar").width()
+      && sideHeight > 0
+      && sideHeight < mainHeight ) {
     $(".doc-sidebar").css("height", mainHeight);
     var sideNode = $("#sidebar");
+    sideNode.css({"position": "fixed"});
     var scrollStart = 0;
     var scrollStop  = headHeight + mainHeight - sideHeight;
 
