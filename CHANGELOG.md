@@ -1,3 +1,10 @@
+## 1.1.0 (2016/5/7)
+
+Change:
+
+- Format of `params.mainMenu` becomes array of tables.
+  - **CAUTION: this change is backward incompatiable**
+
 ## 1.0.3 (2016/5/6)
 
 Bug Fix:
