@@ -19,7 +19,7 @@ window.onload = function() {
       if (w.scrollTop() <= scrollStart) {
         sideNode.css({"position": "fixed"});
       } else if (scrollStart < w.scrollTop() && w.scrollTop() < scrollStop) {
-        sideNode.css({"position": "fixed", "top": headHeight + "px"});
+        sideNode.css({"position": "fixed", "top": headHeight + 20 + "px"});
       } else if (w.scrollTop() >= scrollStop) {
         var topNext
           = headHeight - (headHeight + sideHeight)
