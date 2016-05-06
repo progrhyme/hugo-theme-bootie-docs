@@ -29,5 +29,12 @@ window.onload = function() {
         });
       }
     });
-  } 
+  }
+}
+
+function resetSidebarPos() {
+  var sideNode = $("#sidebar");
+  if ( $(window).width() > $("main").width() + $("#sidebar").width() ) {
+    sideNode.css({"position": "fixed", "top": "", "bottom": ""});
+  }
 }
