@@ -109,6 +109,9 @@ div.doc-search-form {
 .doc-main pre code {
   font-size: 14px;
 }
+div.doc-main {
+  margin-bottom: 20px;
+}
 
 /* List items */
 .doc-list-header {
@@ -129,6 +132,17 @@ div.doc-search-form {
 }
 .doc-entry-meta.in-list {
   font-size: 80%;
+}
+span.doc-list-category {
+  font-style: italic;
+  background-color: #f5f5ff;
+}
+ul.doc-list-category > li {
+  font-size: 20px;
+}
+ul.doc-list-category > li > ul > li {
+  font-size: 18px;
+  font-style: normal;
 }
 
 /* Tables */
@@ -194,8 +208,11 @@ div#sidebar {
 
 /* Sidebar modules for boxing content */
 .sidebar-module {
-  padding: 15px;
+  padding: 0px 15px 5px;
   margin: 0 -15px 15px;
+}
+.sidebar-heading {
+  border-bottom: 1px solid #eee;
 }
 .sidebar-module-inset {
   padding: 15px;
@@ -212,6 +229,25 @@ div#sidebar {
   list-style-position: outside;
   margin-left: -1.5em;
   padding: 0;
+}
+
+ul.sidebar-category-list > li {
+  list-style-type: none;
+  margin-left: -1.5em;
+  font-size: 15px;
+}
+ul.sidebar-category-list > li,
+ul.sidebar-category-list > li > ul > li {
+  list-style-position: outside;
+  padding: 0;
+}
+ul.sidebar-category-list > li > ul > li {
+  font-size: 14px;
+  font-style: normal;
+}
+ul.sidebar-category-list > li > ul > li > span.active {
+  color: #999;
+  font-weight: 500;
 }
 
 .tag-box {
@@ -257,4 +293,3 @@ div#sidebar {
 .doc-footer-em {
   font-size: 16px;
 }
-

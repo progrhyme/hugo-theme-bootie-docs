@@ -22,7 +22,7 @@ window.onload = function() {
         sideNode.css({"position": "fixed", "top": headHeight + 20 + "px"});
       } else if (w.scrollTop() >= scrollStop) {
         var topNext
-          = headHeight - (headHeight + sideHeight)
+          = headHeight - (headHeight + sideHeight + footHeight)
             * (w.scrollTop() - scrollStop) / (totalHeight - scrollStop);
         sideNode.css({
           "position": "fixed", "top": topNext + "px", "bottom": footHeight + "px"

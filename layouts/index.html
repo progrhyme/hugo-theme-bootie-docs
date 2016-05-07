@@ -18,6 +18,29 @@
 	</div>
 {{ end }}
 
+<div class="row doc-category">
+	<h2>Pages in Categories</h2>
+	<div>
+		<ul class="doc-list-category">
+		{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+			<li>
+				<a href="{{ $baseUrl }}/categories/{{ $name | urlize }}">
+					<span class="doc-list-category">{{ $name | title }}</span>
+				</a>
+				<ul>{{ range $taxonomy.Pages }}
+					<li><a href="{{ .RelPermalink }}">
+						<span>{{ .Title }}{{ if .Draft }} #Draft{{ end }}</span>
+						<span class="doc-entry-meta">(<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time>)
+					</span>
+				</a></li>
+				{{ end }}
+				</ul>
+			</li>
+		{{ end }}
+		</ul>
+	</div>
+</div>
+
 {{ if isset .Site.Params "withSitePosts" }}
 <hr />
 
