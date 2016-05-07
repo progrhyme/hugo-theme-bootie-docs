@@ -1,3 +1,11 @@
+## 1.1.1 (2016/5/7)
+
+Change:
+
+- Shows page list by categories for all pages
+  - Shows in sidebar for basic single page or listing page
+  - Shows at bottom in top page `/`
+
 ## 1.1.0 (2016/5/7)
 
 Change:
