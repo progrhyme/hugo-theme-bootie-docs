@@ -109,6 +109,9 @@ div.doc-search-form {
 .doc-main pre code {
   font-size: 14px;
 }
+div.doc-main {
+  margin-bottom: 20px;
+}
 
 /* List items */
 .doc-list-header {
@@ -133,6 +136,13 @@ div.doc-search-form {
 span.doc-list-category {
   font-style: italic;
   background-color: #f5f5ff;
+}
+ul.doc-list-category > li {
+  font-size: 20px;
+}
+ul.doc-list-category > li > ul > li {
+  font-size: 18px;
+  font-style: normal;
 }
 
 /* Tables */
