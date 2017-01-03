@@ -8,7 +8,7 @@ features = ["document", ""]
 min_version = 0.14
 
 [author]
-  name = "YASUTAKE Kiyoshi"
+  name = "IKEDA Kiyoshi"
   homepage = "https://github.com/key-amb"
 
 # If porting an existing theme

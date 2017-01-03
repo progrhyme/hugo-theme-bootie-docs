@@ -56,5 +56,5 @@ Because _Bootie Docs_ is developed for documentation, it lacks many blog-type fa
 
 ## LICENSE
 
-Copyright (C) 2015-2016 YASUTAKE Kiyoshi.  
+Copyright (C) 2015-2017 IKEDA Kiyoshi.  
 Released under the MIT License.
