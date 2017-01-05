@@ -1,3 +1,9 @@
+## 1.1.2 (2017/1/5)
+
+Improve:
+
+- Removes extra padding-bottom in `body` tag which is in no need (#17)
+
 ## 1.1.1 (2016/5/7)
 
 Change:
