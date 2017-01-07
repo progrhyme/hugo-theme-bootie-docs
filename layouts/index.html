@@ -7,7 +7,7 @@
 	<!-- Main jumbotron for a primary marketing message or call to action -->
 	<div class="jumbotron">
 		<h1>{{ .Site.Title }}</h1>
-		<p>{{ if isset .Site.Params "description" }}{{ .Site.Params.description }}{{ else }}You can customize this text by params "description" in your <code>config.toml</code>.{{ end }}</p>
+		<p>{{ if .Site.Params.description }}{{ .Site.Params.description }}{{ else }}You can customize this text by params "description" in your <code>config.toml</code>.{{ end }}</p>
 	</div>
 </div>
 
@@ -41,7 +41,7 @@
 	</div>
 </div>
 
-{{ if isset .Site.Params "withSitePosts" }}
+{{ if .Site.Params.withSitePosts }}
 <hr />
 
 <div class="row doc-main text-center">
