@@ -1,3 +1,10 @@
+## 1.1.3 (2017/1/11)
+
+Fix:
+
+- Avoid to use `{{ if isset .Params "fooBar" }}` syntax because it doesn't work
+  for Hugo v0.18.x currently (#19)
+
 ## 1.1.2 (2017/1/5)
 
 Improve:
