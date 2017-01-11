@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 {{ $baseUrl := .Site.BaseURL }}
-{{ $isHomePage := eq .Title .Site.Title }}
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
 		<link rel="icon" href="{{ $baseUrl }}/favicon.ico">
-		<title>{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+		<title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
 		<!--<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">-->
 		<link rel="stylesheet" href="{{ $baseUrl }}/css/highlight/{{ with .Site.Params.highlightStyle }}{{ . }}{{ else }}default{{ end }}.css">
 		<link rel="stylesheet" href="{{ $baseUrl }}/css/bootstrap.min.css">
@@ -32,11 +31,11 @@
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li {{ if eq $isHomePage true }}class="active"{{ end }}><a href="{{ $baseUrl }}/">Home</a></li>
+					<li {{ if .IsHome }}class="active"{{ end }}><a href="{{ $baseUrl }}/">Home</a></li>
 			{{ $url := .Permalink }}
 			{{ with .Site.Params.mainMenu }}
 				{{ range $menu := . }}
-					{{ $itemUrl := printf "%s/%s/" $baseUrl $menu.link }}
+					{{ $itemUrl := printf "%s/%s" $baseUrl $menu.link }}
 					<li {{ if eq $url $itemUrl }}class="active"{{ end }}><a href="{{ $baseUrl }}/{{ $menu.link }}">{{ $menu.name }}</a></li>
 				{{ end }}
 			{{ end }}
