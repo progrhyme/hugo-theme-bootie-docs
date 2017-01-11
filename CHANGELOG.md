@@ -1,15 +1,25 @@
+## 1.2.0 (2017/1/12)
+
+Change:
+
+- Use `.IsHome` to detect site home (#21)
+  - Fix #20 by Ethan Madison (@ethanmad)
+- Not to append trailing `"/"` to match menu link in header.html (#21)
+
 ## 1.1.3 (2017/1/11)
 
 Fix:
 
 - Avoid to use `{{ if isset .Params "fooBar" }}` syntax because it doesn't work
   for Hugo v0.18.x currently (#19)
+  - Fix #18 by Ethan Madison (@ethanmad)
 
 ## 1.1.2 (2017/1/5)
 
 Improve:
 
 - Removes extra padding-bottom in `body` tag which is in no need (#17)
+  - Fix #16 by Ethan Madison (@ethanmad)
 
 ## 1.1.1 (2016/5/7)
 
