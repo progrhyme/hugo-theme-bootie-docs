@@ -11,7 +11,8 @@
 	</div>
 </div>
 
-{{ range where .Site.Pages "Title" "_index" }}
+{{ $siteTitle := .Site.Title }}
+{{ range where .Site.Pages "Title" $siteTitle }}
 	<div class="row doc-main">
 		<p class="doc-entry-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></p>
 		{{ .Content }}
