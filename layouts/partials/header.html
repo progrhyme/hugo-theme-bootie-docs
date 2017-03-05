@@ -32,11 +32,10 @@
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li {{ if .IsHome }}class="active"{{ end }}><a href="{{ $baseUrl }}/">Home</a></li>
-			{{ $url := .Permalink }}
-			{{ with .Site.Params.mainMenu }}
+			{{ $url := .URL }}
+			{{ with .Site.Menus.main }}
 				{{ range $menu := . }}
-					{{ $itemUrl := printf "%s/%s" $baseUrl $menu.link }}
-					<li {{ if eq $url $itemUrl }}class="active"{{ end }}><a href="{{ $baseUrl }}/{{ $menu.link }}">{{ $menu.name }}</a></li>
+					<li {{ if eq $url .URL }}class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
 				{{ end }}
 			{{ end }}
 				{{ if not .Site.Params.noCategoryLink }}

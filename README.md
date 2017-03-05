@@ -10,6 +10,7 @@ You can see demo and full documentation at http://key-amb.github.io/bootie-docs-
 ## CONTENTS
 
 * [QUICKSTART](#quickstart)
+* [MENUS](#menus)
 * [OPTIONS](#options)
 * [LIMITATION](#limitation)
 * [DEPENDENCIES](#dependencies)
@@ -22,29 +23,40 @@ You can see demo and full documentation at http://key-amb.github.io/bootie-docs-
 
 Then the content appears on top page.
 
-## OPTIONS
+## MENUS
 
-You can customize the menu items in the header navigation bar by configuring `params.mainMenu` in your _config.toml_ (or _config.yaml_).
+You can customize the menu items in the header navigation bar by configuring `menu.main` in your
+_config.toml_ (or _config.yaml_) supported by Hugo's [Menu System](https://gohugo.io/extras/menus/).
 
 ```
 # example of config.toml
 [params]
   highlightStyle = "github"
 
-[[params.mainMenu]]
-  name = "Usage"
-  link = "usage"
+[[menu.main]]
+  name   = "Usage"
+  url    = "/usage/"
+  weight = 10
 
-[[params.mainMenu]]
-  name = "News"
-  link = "categories/news"
+[[menu.main]]
+  name   = "News"
+  url    = "/categories/news/"
+  weight = 20
 ```
 
-All other options and usages are described at the documentation site -- http://key-amb.github.io/bootie-docs-demo/ .
+NOTE:
+
+- Nested menus are not supported.
+
+## OPTIONS
+
+All other options and usages for _Bootie Docs_ are described at the documentation site --
+http://key-amb.github.io/bootie-docs-demo/ .
 
 ## LIMITATION
 
-Because _Bootie Docs_ is developed for documentation, it lacks many blog-type facilities such as RSS feeds, pagination of posts and so on.
+Because _Bootie Docs_ is developed for documentation, it lacks many blog-type facilities such as RSS
+feeds, pagination of posts and so on.
 
 ## DEPENDENCIES
 
