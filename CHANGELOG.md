@@ -1,3 +1,10 @@
+## 1.3.0 (2017/3/5)
+
+Change:
+
+- Apply Hugo's [Menu System](https://gohugo.io/extras/menus/) for header
+  navigation (#26)
+
 ## 1.2.0 (2017/1/12)
 
 Change:
