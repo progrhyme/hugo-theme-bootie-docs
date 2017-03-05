@@ -1,3 +1,10 @@
+## 1.3.1 (2017/3/5)
+
+Enhance:
+
+- Add site-customized CSS as `static/css/site.css` for one to customize site's
+  look & feel (#27)
+
 ## 1.3.0 (2017/3/5)
 
 Change:
