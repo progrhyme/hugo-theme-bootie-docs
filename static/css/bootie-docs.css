@@ -202,8 +202,9 @@ main > article > section > table > tbody > tr:nth-of-type(odd) {
 /*
  * Sidebar
  */
-
-div#sidebar {
+@media (min-width: 1200px) {
+  div#sidebar {
+  }
 }
 
 /* Sidebar modules for boxing content */
