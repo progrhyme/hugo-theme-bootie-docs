@@ -1,3 +1,10 @@
+## 1.3.2 (2017/5/21)
+
+Improve:
+
+- Add media query for sidebar so that it don't overlay screen in narrow browsers
+  (#29) @jodumont
+
 ## 1.3.1 (2017/3/5)
 
 Enhance:
