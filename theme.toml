@@ -1,15 +1,15 @@
 name = "Hugo Theme Bootie Docs"
 license = "MIT"
-licenselink = "https://github.com/key-amb/hugo-theme-bootie-docs/LICENSE.md"
+licenselink = "https://github.com/progrhyme/hugo-theme-bootie-docs/LICENSE.md"
 description = "A simple Hugo theme with Bootstrap for documentation"
-homepage = "http://key-amb.github.io/bootie-docs-demo/"
+homepage = "http://progrhyme.github.io/bootie-docs-demo/"
 tags = ["document", "bootstrap"]
 features = ["document", ""]
 min_version = 0.15
 
 [author]
   name = "IKEDA Kiyoshi"
-  homepage = "https://github.com/key-amb"
+  homepage = "https://github.com/progrhyme"
 
 # If porting an existing theme
 [original]
