@@ -1,3 +1,10 @@
+## 1.4.0 (2017/7/20)
+
+Change:
+
+- Move repository location from [@key-amb's](https://github.com/key-amb/) to
+  [@progrhyme's](https://github.com/progrhyme/) (#31)
+
 ## 1.3.2 (2017/5/21)
 
 Improve:
