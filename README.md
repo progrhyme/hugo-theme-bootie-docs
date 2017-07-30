@@ -64,7 +64,7 @@ feeds, pagination of posts and so on.
 
 * [Bootstrap](http://getbootstrap.com/) v3.3.7 ... Well-known CSS framework.
 * [jQuery](https://jquery.com/) v3.2.1 ... Requried by _Bootstrap_.
-* [highlight.js](https://highlightjs.org/) v9.3.0 ... For syntax highlighting.
+* [highlight.js](https://highlightjs.org/) v9.12.0 ... For syntax highlighting.
 
 ## LICENSE
 
