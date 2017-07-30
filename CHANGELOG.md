@@ -1,3 +1,12 @@
+## 1.5.0 (2017/7/30)
+
+Change:
+
+- Upgrade dependent components (#32):
+  - bootstrap.css to v3.3.7 (was v3.3.6)
+  - jQuery to v3.2.1 (was v1.12.3)
+  - highlight.js to v9.12.0 (was v9.3.0)
+
 ## 1.4.0 (2017/7/20)
 
 Change:
