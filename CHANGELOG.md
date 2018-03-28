@@ -1,3 +1,10 @@
+## 1.5.1 (2018/3/28)
+
+Fix:
+
+- Add `img` property "max-width" in CSS (#34)
+  - Fix #33 by Dmitry Verkhoturov (@paskal)
+
 ## 1.5.0 (2017/7/30)
 
 Change:
