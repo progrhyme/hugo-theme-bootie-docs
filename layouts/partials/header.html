@@ -33,7 +33,7 @@
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li {{ if .IsHome }}class="active"{{ end }}><a href="{{ $baseUrl }}/">Home</a></li>
-			{{ $url := .URL }}
+			{{ $url := .RelPermalink }}
 			{{ with .Site.Menus.main }}
 				{{ range $menu := . }}
 					<li {{ if eq $url .URL }}class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
